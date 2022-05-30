@@ -1,0 +1,410 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Style para el header*/
+header { 
+    background-color: rgba(200, 204, 186, 0.544);
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo { 
+    display: flex;
+    height: 150px;
+    width: 200px;
+}
+
+.menu-container{
+    display: flex;
+    }
+
+.menu { 
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item { 
+    color: rgb(40, 48, 25);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    font-weight: bolder;
+    color: white;
+}
+
+/* Fin del Style para el header */
+
+
+/* style para el Index*/
+
+
+body { 
+    background-color: rgba(200, 204, 186, 0.544);
+}
+
+.imagen-index{
+    width: 100%;
+    height: 800px;
+    padding-top: 100px;
+}
+
+.index-galeria{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.imagen-bebe{
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+}
+
+.mapa{
+    height: 300px;
+    width: 300px;
+    margin-right: 150px;
+}
+
+.mapa-texto{
+    margin-left: 52px;
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(159, 163, 150);
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    margin-top: 50px;
+}
+
+h2{
+    color: rgb(72, 122, 31);
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3{
+    color: rgb(33, 35, 32);
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.index-texto-header { 
+    margin: 10px 0px 0px 52px;
+    text-align:right;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.index-texto {
+    margin-left: 52px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Fin del Style para el Index*/
+
+/* Style para el portfolio */
+
+
+.div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover, .div7:hover, .div8:hover, .div9:hover, .div11:hover, .div12:hover, .div13:hover, .div14:hover, .div15:hover, .div16:hover, .div17:hover, .div18:hover, .div20:hover, .div21:hover, .div22:hover, .div23:hover{
+    transform: scale(2);
+    transition: all 3s;
+}
+
+.div1:hover, .div10:hover, .div19:hover{
+    transform: scale(1.2);
+    transition: all 3s;
+}
+
+.portfolio-container-frame{
+    display: flex;
+    height: 1900px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    height: 1800px;
+    width: 1200px;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 3 / 3;
+    background-image: url(multimedia/galerie/img2.jpg); 
+    background-size: cover;
+}
+
+.div2 { grid-area: 1 / 3 / 2 / 4;
+    background-image: url(multimedia/galerie/img1.jpg); 
+    background-size: cover;    
+}
+
+.div3 { grid-area: 1 / 4 / 2 / 5; 
+    background-image: url(multimedia/galerie/img3.jpg); 
+    background-size: cover;
+}
+
+.div4 { grid-area: 2 / 3 / 3 / 4; 
+    background-image: url(multimedia/galerie/img4.jpg); 
+    background-size: cover;
+}
+
+.div5 { grid-area: 2 / 4 / 3 / 5; 
+    background-image: url(multimedia/galerie/img5.jpg); 
+    background-size: cover;
+}
+
+.div6 { grid-area: 3 / 1 / 4 / 2; 
+    background-image: url(multimedia/galerie/img6.jpg); 
+    background-size: cover;
+}
+
+.div7 { grid-area: 3 / 2 / 4 / 3; 
+    background-image: url(multimedia/galerie/img7.jpg); 
+    background-size: cover;
+}
+
+.div8 { grid-area: 3 / 3 / 4 / 4; 
+    background-image: url(multimedia/galerie/img8.jpg); 
+    background-size: cover;
+}
+
+.div9 { grid-area: 3 / 4 / 4 / 5; 
+    background-image: url(multimedia/galerie/img9.jpg); 
+    background-size: cover;
+}
+
+.div10 { grid-area: 4 / 3 / 6 / 5; 
+    background-image: url(multimedia/galerie/img2.jpg); 
+    background-size: cover;
+}
+
+.div11 { grid-area: 4 / 1 / 5 / 2; 
+    background-image: url(multimedia/galerie/img1.jpg); 
+    background-size: cover;
+}
+
+.div12 { grid-area: 4 / 2 / 5 / 3; 
+    background-image: url(multimedia/galerie/img3.jpg); 
+    background-size: cover;
+}
+
+.div13 { grid-area: 5 / 1 / 6 / 2; 
+    background-image: url(multimedia/galerie/img4.jpg); 
+    background-size: cover;
+}
+
+.div14 { grid-area: 5 / 2 / 6 / 3; 
+    background-image: url(multimedia/galerie/img5.jpg); 
+    background-size: cover;
+}
+
+.div15 { grid-area: 6 / 1 / 7 / 2; 
+    background-image: url(multimedia/galerie/img6.jpg); 
+    background-size: cover;
+ }
+
+.div16 { grid-area: 6 / 2 / 7 / 3; 
+    background-image: url(multimedia/galerie/img7.jpg); 
+    background-size: cover;
+}
+
+.div17 { grid-area: 6 / 3 / 7 / 4; 
+    background-image: url(multimedia/galerie/img8.jpg); 
+    background-size: cover;
+}
+
+.div18 { grid-area: 6 / 4 / 7 / 5; 
+    background-image: url(multimedia/galerie/img9.jpg); 
+    background-size: cover;
+}
+
+.div19 { grid-area: 7 / 1 / 9 / 3; 
+    background-image: url(multimedia/galerie/img2.jpg); 
+    background-size: cover;
+}
+
+.div20 { grid-area: 7 / 3 / 8 / 4; 
+    background-image: url(multimedia/galerie/img1.jpg); 
+    background-size: cover;
+}
+
+.div21 { grid-area: 7 / 4 / 8 / 5; 
+    background-image: url(multimedia/galerie/img3.jpg); 
+    background-size: cover;
+}
+
+.div22 { grid-area: 8 / 4 / 9 / 5; 
+    background-image: url(multimedia/galerie/img4.jpg); 
+    background-size: cover;
+}
+
+.div23 { grid-area: 8 / 3 / 9 / 4; 
+    background-image: url(multimedia/galerie/img5.jpg); 
+    background-size: cover;
+}
+
+/* Fin del Style para el portfolio */
+
+
+/* Style para los servicios */
+
+.producto-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.producto{
+    border-style:groove;
+    border-color:rgba(200, 204, 186, 0.544);
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+}
+
+.producto-pagina{
+    height: 770px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.producto-titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.producto-detalles{
+
+    margin: 0px 10px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+.producto-precio{
+    color: rgb(33, 35, 32);
+    margin: 10px 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+/* Fin del Style para los servicios */
+
+/* Style para el About */
+
+.about-container{
+    display: flex;
+    height: 775px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.about-imagen{
+    height: 600px;
+    width: 600px;
+    margin-right: 20px;
+}
+
+.about-descripcion{
+    height: 600px;
+    width: 600px;
+    margin-left: 20px;
+    margin: 10px 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+/* Fin del Style para el About */
+
+
+/* Style para el Footer */
+footer { 
+    display: flex;
+    background-color:rgba(200, 204, 186, 0.544);
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media{
+    margin-left:10px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-social{
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+}
+
+.red-social:hover{
+    transform: scale(1.1) translateY(-4px);
+    transition: all 0.5s;
+}
+
+/* Fin del style para el Footer */
+
+/* Style para el Whatsapp */
+
+.whatsapp{
+    position: fixed;
+    bottom:100px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+}
+
+.whatsapp:hover{
+    transform: scale(1.5) ;
+    filter: invert(100%);
+    transition: all 1s ;
+    
+}
+
+/* FIn del style para el whatsapp */
